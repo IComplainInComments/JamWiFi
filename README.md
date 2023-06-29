@@ -1,4 +1,14 @@
+> **This Repo is the continuation of [0x0XDev/JamWiFi](https://github.com/0x0XDev/JamWiFi), since he disappeared**
 > **This Repo is the continuation of [unixpickle/JamWiFi](https://github.com/unixpickle/JamWiFi), since it got deprecated and won't be updated**
+
+#### Update 1.3.3
+- Updated to use `CWWiFiClient.sharedWiFiClient` for API compliance.
+- Updated to use `NSAlert` for API compliance.
+- Removed the use of Carbon API
+- Removal of `AuthorizationExecuteWithPrivileges` **Run app from terminal as root**
+- Use of the `JWAppDelegate` for runtime compliance.
+
+**NOTE:** tested to work on M1 (besides the deauth ability), if you can let me know if it works, that would be great. (I use WPA3, which doesnt work).
 
 #### Update 1.3.2
 - Added Join Option (Intended for Join by BSSID)
