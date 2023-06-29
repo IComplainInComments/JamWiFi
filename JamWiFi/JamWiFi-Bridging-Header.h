@@ -10,4 +10,3 @@
 
 #import <objc/runtime.h>
 #include <dlfcn.h>
-#import "CarbonAppProcess.h"

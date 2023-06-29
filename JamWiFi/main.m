@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 		
 		NSLog(@"Main.m: Initializing..");
 		
-        if (geteuid()) {
+        /*if (geteuid()) {
             OSStatus myStatus;
             AuthorizationFlags myFlags = kAuthorizationFlagDefaults;
             AuthorizationRef myAuthorizationRef;
@@ -48,12 +48,12 @@ int main(int argc, char *argv[]) {
             
             myFlags = kAuthorizationFlagDefaults;
             myStatus = AuthorizationExecuteWithPrivileges(myAuthorizationRef, myToolPath, myFlags, myArguments,
-                                                          NULL);
+                                                        NULL);
             AuthorizationFree(myAuthorizationRef, kAuthorizationFlagDefaults);
             exit(0);
-        }
-		//NSApplication.sharedApplication.delegate = JWAppDelegate.new;
-		//[NSApp setDelegate:JWAppDelegate.new];
+        }*/
+		NSApplication.sharedApplication.delegate = JWAppDelegate.new;
+		[NSApp setDelegate:JWAppDelegate.new];
 		
         return NSApplicationMain(argc, (const char **)argv);
     }

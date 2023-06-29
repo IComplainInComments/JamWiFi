@@ -87,7 +87,7 @@ class JWAppDelegate: NSObject, NSApplicationDelegate {
 		window.isMovableByWindowBackground = true
 		networkList = JWListView(frame: window.contentView?.bounds ?? NSRect.null)
 		push(networkList, direction: .forward)
-		CarbonAppProcess.current().makeFrontmost()
+		//CarbonAppProcess.current().makeFrontmost()
 	}
 	
 	func applicationShouldTerminateAfterLastWindowClosed(_ theApplication: NSApplication) -> Bool {
